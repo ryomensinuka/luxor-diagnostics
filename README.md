@@ -101,7 +101,7 @@ Criado por três jovens desenvolvedores de 14-15 anos, o projeto combina conheci
 
 ### Opção 1: Usar Online (Recomendado)
 
-Acesse: [luxor-diagnostics.vercel.app](https://luxor-diagnostics.vercel.app)
+Acesse: [ryomensinuka.github.io/luxor-diagnostics](https://ryomensinuka.github.io/luxor-diagnostics/)
 
 ### Opção 2: Rodar Localmente
 
@@ -211,16 +211,10 @@ Contribuições são muito bem-vindas! Siga os passos abaixo:
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/usuario1.png" width="100px;" alt="Pedro Henrique"/><br>
-      <sub><b>Pedro Henrique</b></sub><br>
-      <sub>Design & UI/UX</sub><br>
-      <a href="https://github.com/usuario1">GitHub</a>
-    </td>
-    <td align="center">
-      <img src="https://github.com/usuario2.png" width="100px;" alt="André Machado"/><br>
+      <img src="https://github.com/dracox403.png" width="100px;" alt="André Machado"/><br>
       <sub><b>André Machado</b></sub><br>
       <sub>Cybersegurança</sub><br>
-      <a href="https://github.com/usuario2">GitHub</a>
+      <a href="https://github.com/dracox403">GitHub</a>
     </td>
     <td align="center">
       <img src="https://github.com/ryomensinuka.png" width="100px;" alt="Arthur Calebe"/><br>
@@ -231,7 +225,7 @@ Contribuições são muito bem-vindas! Siga os passos abaixo:
   </tr>
 </table>
 
-**Três jovens de 14-15 anos transformando ideias em realidade** 💻🔒🌱
+**Três jovens transformando ideias em realidade** 💻🔒🌱
 
 </div>
 
@@ -239,9 +233,9 @@ Contribuições são muito bem-vindas! Siga os passos abaixo:
 
 ## 📞 Contato
 
-- **Email**: contato@luxor.tech *(em breve)*
-- **GitHub**: [@LuxorTech](https://github.com/luxortech)
-- **Instagram**: [@ryomensinuca](https://instagram.com/ryomensinuca)
+- **Email**: *(em breve)*
+- **GitHub**: *(em breve)*
+- **Instagram**: *(em breve)*
 
 ---
 
@@ -275,10 +269,10 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 <div align="center">
 
-![GitHub Stars](https://img.shields.io/github/stars/seuusuario/luxor-diagnostics?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/seuusuario/luxor-diagnostics?style=social)
-![GitHub Issues](https://img.shields.io/github/issues/seuusuario/luxor-diagnostics)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr/seuusuario/luxor-diagnostics)
+![GitHub Stars](https://img.shields.io/github/stars/ryomensinuka/luxor-diagnostics?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/ryomensinuka/luxor-diagnostics?style=social)
+![GitHub Issues](https://img.shields.io/github/issues/ryomensinuka/luxor-diagnostics)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/ryomensinuka/luxor-diagnostics)
 
 </div>
 
