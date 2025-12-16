@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxor Diagnostics - Diagnóstico de PC Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div>
+                <div class="logo">LUXOR DIAGNOSTICS</div>
+                <div class="subtitle">Diagnóstico Inteligente de PC</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>🔧 Diagnóstico de PC Online</h1>
+            <p>Identifique problemas, receba soluções e melhore a segurança do seu computador em minutos</p>
+        </div>
+
+        <div class="diagnostic-tool" role="main" aria-labelledby="main-heading">
+            <div class="progress-container" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" aria-label="Progresso do diagnóstico">
+                <div class="progress-steps" aria-hidden="true">
+                    <div class="progress-step completed" id="step-indicator-1">1. Informações</div>
+                    <div class="progress-step" id="step-indicator-2">2. Sintomas</div>
+                    <div class="progress-step" id="step-indicator-3">3. Detalhes</div>
+                    <div class="progress-step" id="step-indicator-4">4. Resultado</div>
+                </div>
+            </div>
+
+            <!-- Step 1: Sistema -->
+            <div class="step active" id="step-1" role="tabpanel" aria-labelledby="step-indicator-1">
+                <h2 id="main-heading">Informações do Sistema</h2>
+                
+                <div class="form-group">
+                    <label for="sistema">Sistema Operacional:</label>
+                    <select id="sistema">
+                        <option value="">Selecione...</option>
+                        <option value="windows11">Windows 11</option>
+                        <option value="windows10">Windows 10</option>
+                        <option value="windows7">Windows 7/8</option>
+                        <option value="macos">macOS</option>
+                        <option value="linux">Linux</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-pc">Tipo de Computador:</label>
+                    <select id="tipo-pc">
+                        <option value="">Selecione...</option>
+                        <option value="desktop">Desktop (PC de mesa)</option>
+                        <option value="notebook">Notebook</option>
+                        <option value="all-in-one">All-in-One</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="idade-pc">Idade do Computador:</label>
+                    <select id="idade-pc">
+                        <option value="">Selecione...</option>
+                        <option value="novo">Menos de 1 ano</option>
+                        <option value="medio">1-3 anos</option>
+                        <option value="antigo">3-5 anos</option>
+                        <option value="muito-antigo">Mais de 5 anos</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="nextStep(2)" aria-label="Ir para o próximo passo">Próximo →</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Sintomas -->
+            <div class="step" id="step-2" role="tabpanel" aria-labelledby="step-indicator-2">
+                <h2>Qual o Problema?</h2>
+                
+                <div class="form-group">
+                    <label for="problema-principal">Problema Principal:</label>
+                    <select id="problema-principal">
+                        <option value="">Selecione...</option>
+                        <option value="lento">Computador muito lento</option>
+                        <option value="travamento">Travamentos frequentes</option>
+                        <option value="tela-azul">Tela azul (BSOD)</option>
+                        <option value="superaquecimento">Superaquecimento</option>
+                        <option value="barulho">Barulhos estranhos</option>
+                        <option value="internet">Problemas de internet</option>
+                        <option value="virus">Suspeita de vírus</option>
+                        <option value="nao-liga">Não liga</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quando-ocorre">Quando ocorre?</label>
+                    <select id="quando-ocorre">
+                        <option value="">Selecione...</option>
+                        <option value="sempre">O tempo todo</option>
+                        <option value="inicializacao">Ao ligar o PC</option>
+                        <option value="uso-intenso">Ao usar programas pesados</option>
+                        <option value="online">Ao navegar na internet</option>
+                        <option value="aleatorio">Aleatoriamente</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="duracao">Há quanto tempo isso acontece?</label>
+                    <select id="duracao">
+                        <option value="">Selecione...</option>
+                        <option value="hoje">Começou hoje</option>
+                        <option value="semana">Alguns dias</option>
+                        <option value="mes">Algumas semanas</option>
+                        <option value="meses">Vários meses</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="previousStep(1)" aria-label="Voltar para o passo anterior">← Voltar</button>
+                    <button class="btn btn-primary" onclick="nextStep(3)" aria-label="Ir para o próximo passo">Próximo →</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Detalhes -->
+            <div class="step" id="step-3" role="tabpanel" aria-labelledby="step-indicator-3">
+                <h2>Informações Adicionais</h2>
+                
+                <div class="form-group">
+                    <label for="antivirus">Possui antivírus ativo?</label>
+                    <select id="antivirus">
+                        <option value="">Selecione...</option>
+                        <option value="sim">Sim, atualizado</option>
+                        <option value="desatualizado">Sim, mas desatualizado</option>
+                        <option value="nao">Não</option>
+                        <option value="nao-sei">Não sei</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="atualizacoes">Sistema operacional atualizado?</label>
+                    <select id="atualizacoes">
+                        <option value="">Selecione...</option>
+                        <option value="sim">Sim, sempre atualizado</option>
+                        <option value="as-vezes">Às vezes</option>
+                        <option value="nao">Raramente atualizo</option>
+                        <option value="nao-sei">Não sei</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descreva o problema (opcional):</label>
+                    <textarea id="descricao" placeholder="Ex: O PC demora muito para ligar, faz barulho de ventilador..."></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="previousStep(2)" aria-label="Voltar para o passo anterior">← Voltar</button>
+                    <button class="btn btn-primary" onclick="gerarDiagnostico()" aria-label="Gerar diagnóstico completo">Gerar Diagnóstico 🔍</button>
+                </div>
+            </div>
+
+            <!-- Step 4: Resultados -->
+            <div class="step" id="step-4" role="tabpanel" aria-labelledby="step-indicator-4">
+                <h2>Diagnóstico Completo</h2>
+                <div id="resultados" role="region" aria-live="polite" aria-atomic="true"></div>
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="reiniciar()" aria-label="Iniciar uma nova consulta">← Nova Consulta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">LUXOR</div>
+        <p>&copy; 2024 Luxor. Desenvolvido por Pedro Henrique, André Machado e Arthur Calebe</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
